@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡ HAWK SUJAL SPAMMER PRO 2025</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #ff006e;
+            --secondary: #8338ec;
+            --dark: #0a0a1f;
+            --darker: #050510;
+            --success: #00ff88;
+            --warning: #ffbe0b;
+            --danger: #ff3860;
+        }
+        
+        body {
+            background: linear-gradient(135deg, var(--darker), var(--dark), #1a1a2e);
+            color: #fff;
+            min-height: 100vh;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .glass-card:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 10px 30px rgba(255, 0, 110, 0.1);
+        }
+        
+        .btn-spam {
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            border: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-spam:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(255, 0, 110, 0.4);
+        }
+        
+        .btn-spam:active {
+            transform: translateY(-1px);
+        }
+        
+        .console {
+            background: rgba(0, 0, 0, 0.7);
+            color: var(--success);
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+            border-radius: 15px;
+            height: 400px;
+            overflow-y: auto;
+            border: 1px solid rgba(0, 255, 136, 0.2);
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        .console::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .console::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+        
+        .console::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: 10px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, rgba(255, 0, 110, 0.1), rgba(131, 56, 236, 0.1));
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 5px;
+        }
+        
+        .stat-label {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .form-control-dark {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            border-radius: 10px;
+            padding: 12px 15px;
+        }
+        
+        .form-control-dark:focus {
+            background: rgba(0, 0, 0, 0.5);
+            border-color: var(--primary);
+            color: white;
+            box-shadow: 0 0 0 0.25rem rgba(255, 0, 110, 0.25);
+        }
+        
+        .tab-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .tab-btn.active {
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white;
+            border-color: transparent;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(255, 0, 110, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(255, 0, 110, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 0, 110, 0); }
+        }
+        
+        .badge-status {
+            font-size: 14px;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+        
+        .status-running {
+            background: linear-gradient(45deg, var(--success), #00cc6a);
+            animation: pulse 1.5s infinite;
+        }
+        
+        .status-stopped {
+            background: linear-gradient(45deg, var(--danger), #cc0033);
+        }
+        
+        .status-ready {
+            background: linear-gradient(45deg, var(--warning), #ff9e00);
+        }
+        
+        .log-success { color: var(--success); }
+        .log-error { color: var(--danger); }
+        .log-warning { color: var(--warning); }
+        .log-info { color: #00b4d8; }
+    </style>
+</head>
+<body>
+    <div class="container py-4">
+        <!-- Header -->
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold mb-3">
+                <span style="background: linear-gradient(45deg, #ff006e, #8338ec, #3a86ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    ⚡ HAWK SUJAL SPAMMER PRO 2025
+                </span>
+            </h1>
+            <p class="lead text-light opacity-75">Advanced Instagram Automation Tool • Anti-Ban • Multi-Thread • Session Support</p>
+        </div>
+
+        <!-- Stats Dashboard -->
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="stat-number" id="sentCount">{{ sent }}</div>
+                    <div class="stat-label">Messages Sent</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="stat-number" id="failedCount">{{ failed }}</div>
+                    <div class="stat-label">Failed</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="stat-number" id="threadsCount">{{ threads_active }}</div>
+                    <div class="stat-label">Active Threads</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="stat-number" id="targetsCount">{{ total_targets }}</div>
+                    <div class="stat-label">Total Targets</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Status Badge -->
+        <div class="text-center mb-4">
+            <span class="badge-status {% if status == 'BOMBING ACTIVE' %}status-running{% elif status == 'STOPPED' %}status-stopped{% else %}status-ready{% endif %}">
+                <i class="fas fa-circle me-2"></i> {{ status }}
+            </span>
+        </div>
+
+        <!-- Main Card -->
+        <div class="glass-card p-4 mb-4">
+            <!-- Tabs -->
+            <div class="d-flex justify-content-center mb-4">
+                <button class="tab-btn active" onclick="showTab('basic')">
+                    <i class="fas fa-cog me-2"></i>Basic Settings
+                </button>
+                <button class="tab-btn" onclick="showTab('advanced')">
+                    <i class="fas fa-sliders-h me-2"></i>Advanced
+                </button>
+                <button class="tab-btn" onclick="showTab('tools')">
+                    <i class="fas fa-tools me-2"></i>Tools
+                </button>
+            </div>
+
+            <form method="POST" id="spamForm">
+                <!-- Basic Tab -->
+                <div id="basic-tab" class="tab-content active">
+                    <div class="row g-4">
+                        <!-- Login Section -->
+                        <div class="col-md-6">
+                            <h5 class="mb-3"><i class="fas fa-sign-in-alt me-2"></i>Account Login</h5>
+                            <div class="mb-3">
+                                <select name="mode" class="form-select form-control-dark" onchange="toggleLoginMode()">
+                                    <option value="username" {% if cfg.mode == "username" %}selected{% endif %}>Username + Password</option>
+                                    <option value="session" {% if cfg.mode == "session" %}selected{% endif %}>Session ID (Recommended)</option>
+                                </select>
+                            </div>
+                            
+                            <div id="usernameFields" {% if cfg.mode == "session" %}style="display:none"{% endif %}>
+                                <div class="mb-3">
+                                    <input type="text" name="username" class="form-control-dark" 
+                                           placeholder="Instagram Username" value="{{ cfg.username }}">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="password" name="password" class="form-control-dark" 
+                                           placeholder="Password">
+                                </div>
+                                <button type="button" class="btn btn-outline-primary w-100 mb-3" onclick="testLogin()">
+                                    <i class="fas fa-check me-2"></i>Test Login
+                                </button>
+                            </div>
+                            
+                            <div id="sessionField" {% if cfg.mode != "session" %}style="display:none"{% endif %}>
+                                <div class="mb-3">
+                                    <textarea name="sessionid" class="form-control-dark" rows="4" 
+                                              placeholder="sessionid cookie value">{{ cfg.sessionid }}</textarea>
+                                    <small class="text-info">
+                                        <i class="fas fa-info-circle me-1"></i>
+                                        F12 → Application → Cookies → sessionid (Copy full value)
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Target Section -->
+                        <div class="col-md-6">
+                            <h5 class="mb-3"><i class="fas fa-bullseye me-2"></i>Target Settings</h5>
+                            <div class="mb-3">
+                                <select name="message_type" class="form-select form-control-dark">
+                                    <option value="thread" {% if cfg.message_type == "thread" %}selected{% endif %}>Thread ID Message</option>
+                                    <option value="dm" {% if cfg.message_type == "dm" %}selected{% endif %}>Direct Message (Username)</option>
+                                    <option value="comment" {% if cfg.message_type == "comment" %}selected{% endif %}>Post Comment</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <textarea name="targets" class="form-control-dark" rows="4" 
+                                          placeholder="Target Thread IDs or Usernames (one per line or comma separated)">{{ cfg.targets }}</textarea>
+                                <small class="text-info">
+                                    <i class="fas fa-info-circle me-1"></i>
+                                    For thread: numeric ID | For DM: usernames | For comment: post URLs
+                                </small>
+                            </div>
+                            <button type="button" class="btn btn-outline-info w-100 mb-3" onclick="validateTargets()">
+                                <i class="fas fa-check-double me-2"></i>Validate Targets
+                            </button>
+                        </div>
+
+                        <!-- Message Section -->
+                        <div class="col-12">
+                            <h5 class="mb-3"><i class="fas fa-comment-alt me-2"></i>Messages</h5>
+                            <div class="mb-3">
+                                <textarea name="messages" class="form-control-dark" rows="6" 
+                                          placeholder="Enter messages (one per line) - Randomly selected">{{ cfg.messages }}</textarea>
+                            </div>
+                        </div>
+
+                        <!-- Basic Controls -->
+                        <div class="col-md-4">
+                            <label class="form-label">Delay (seconds)</label>
+                            <input type="number" step="0.1" min="0.5" max="60" name="delay" 
+                                   class="form-control-dark" value="{{ cfg.delay }}">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Threads</label>
+                            <select name="max_threads" class="form-select form-control-dark">
+                                {% for i in range(1, 11) %}
+                                <option value="{{ i }}" {% if cfg.max_threads == i %}selected{% endif %}>{{ i }} Thread{{ 's' if i > 1 }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Cycle Break</label>
+                            <div class="input-group">
+                                <input type="number" name="cycle" class="form-control-dark" 
+                                       placeholder="Messages" value="{{ cfg.cycle }}">
+                                <span class="input-group-text bg-dark text-white">after</span>
+                                <input type="number" name="break_time" class="form-control-dark" 
+                                       placeholder="Seconds" value="{{ cfg.break_time }}">
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="col-12 text-center mt-4">
+                            <button type="submit" class="btn btn-spam me-3">
+                                <i class="fas fa-rocket me-2"></i>START BOMBING
+                            </button>
+                            <a href="/stop" class="btn btn-danger px-5">
+                                <i class="fas fa-stop-circle me-2"></i>STOP
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advanced Tab -->
+                <div id="advanced-tab" class="tab-content">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <h5><i class="fas fa-user-shield me-2"></i>Anti-Detection</h5>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" name="delay_random" 
+                                       {% if cfg.delay_random %}checked{% endif %}>
+                                <label class="form-check-label">Random Delay Variation</label>
+                            </div>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" name="stop_on_challenge" 
+                                       {% if cfg.stop_on_challenge %}checked{% endif %}>
+                                <label class="form-check-label">Stop on Challenge</label>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Max Retries</label>
+                                <input type="number" name="max_retries" class="form-control-dark" 
+                                       min="1" max="10" value="{{ cfg.max_retries }}">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5><i class="fas fa-network-wired me-2"></i>Proxy Settings</h5>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" name="use_proxy" 
+                                       {% if cfg.use_proxy %}checked{% endif %}>
+                                <label class="form-check-label">Use Proxy</label>
+                            </div>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" name="rotate_proxy" 
+                                       {% if cfg.rotate_proxy %}checked{% endif %}>
+                                <label class="form-check-label">Rotate Proxy</label>
+                            </div>
+                            <div class="mb-3">
+                                <textarea name="proxy_list" class="form-control-dark" rows="3" 
+                                          placeholder="Proxy list (one per line)">{{ cfg.proxy_list }}</textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools Tab -->
+                <div id="tools-tab" class="tab-content">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <h5><i class="fas fa-key me-2"></i>Session Tools</h5>
+                            <div class="d-grid gap-2">
+                                <button type="button" class="btn btn-outline-info" onclick="getSessionId()">
+                                    <i class="fas fa-copy me-2"></i>Get Current Session ID
+                                </button>
+                                <button type="button" class="btn btn-outline-warning" onclick="exportConfig()">
+                                    <i class="fas fa-download me-2"></i>Export Configuration
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h5><i class="fas fa-tools me-2"></i>Utilities</h5>
+                            <div class="d-grid gap-2">
+                                <button type="button" class="btn btn-outline-secondary" onclick="clearConsole()">
+                                    <i class="fas fa-broom me-2"></i>Clear Console
+                                </button>
+                                <button type="button" class="btn btn-outline-secondary" onclick="loadSampleMessages()">
+                                    <i class="fas fa-file-alt me-2"></i>Load Sample Messages
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Console -->
+        <div class="glass-card p-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5><i class="fas fa-terminal me-2"></i>Live Console</h5>
+                <div>
+                    <span class="text-success me-3">
+                        <i class="fas fa-play-circle me-1"></i>
+                        <span id="uptime">00:00:00</span>
+                    </span>
+                    <button class="btn btn-sm btn-outline-secondary" onclick="copyConsole()">
+                        <i class="fas fa-copy me-1"></i>Copy
+                    </button>
+                </div>
+            </div>
+            <div class="console" id="console">
+                {% for log in logs %}
+                <div class="log-{{ log.split(' ')[0].lower().replace(':', '').replace('️', '') if '️' in log else 'info' }}">
+                    {{ log|safe }}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center mt-4 text-muted">
+            <small>
+                <i class="fas fa-shield-alt me-1"></i>HAWK SUJAL PRO 2025 • Professional Instagram Automation Tool
+                <br>
+                <span class="text-warning">
+                    <i class="fas fa-exclamation-triangle me-1"></i>
+                    For Educational Purposes Only • Use Responsibly
+                </span>
+            </small>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal fade" id="sessionModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title"><i class="fas fa-key me-2"></i>Session ID</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <textarea id="sessionText" class="form-control bg-dark text-white" rows="4" readonly></textarea>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="copySession()">
+                        <i class="fas fa-copy me-2"></i>Copy
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Tab management
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected tab
+            document.getElementById(`${tabName}-tab`).classList.add('active');
+            event.target.classList.add('active');
+        }
+        
+        // Login mode toggle
+        function toggleLoginMode() {
+            const mode = document.querySelector('[name="mode"]').value;
+            document.getElementById('usernameFields').style.display = mode === 'username' ? 'block' : 'none';
+            document.getElementById('sessionField').style.display = mode === 'session' ? 'block' : 'none';
+        }
+        
+        // Real-time updates
+        let startTime = new Date();
+        
+        function updateStats() {
+            fetch('/api/status')
+                .then(response => response.json())
+                .then(data => {
+                    // Update stats
+                    document.getElementById('sentCount').textContent = data.sent;
+                    document.getElementById('failedCount').textContent = data.failed;
+                    document.getElementById('threadsCount').textContent = data.threads_active;
+                    document.getElementById('targetsCount').textContent = data.total_targets;
+                    
+                    // Update status badge
+                    const statusBadge = document.querySelector('.badge-status');
+                    statusBadge.innerHTML = `<i class="fas fa-circle me-2"></i> ${data.status}`;
+                    statusBadge.className = 'badge-status ';
+                    if (data.status.includes('BOMBING')) {
+                        statusBadge.classList.add('status-running');
+                    } else if (data.status.includes('STOPPED')) {
+                        statusBadge.classList.add('status-stopped');
+                    } else {
+                        statusBadge.classList.add('status-ready');
+                    }
+                    
+                    // Update console
+                    if (data.logs && data.logs.length > 0) {
+                        const consoleDiv = document.getElementById('console');
+                        const currentLogs = Array.from(consoleDiv.children).map(el => el.textContent.trim());
+                        const newLogs = data.logs.filter(log => !currentLogs.includes(log));
+                        
+                        newLogs.forEach(log => {
+                            const div = document.createElement('div');
+                            // Determine log type
+                            if (log.includes('❌') || log.includes('Failed')) {
+                                div.className = 'log-error';
+                            } else if (log.includes('✅') || log.includes('success')) {
+                                div.className = 'log-success';
+                            } else if (log.includes('⚠️') || log.includes('warning')) {
+                                div.className = 'log-warning';
+                            } else {
+                                div.className = 'log-info';
+                            }
+                            div.textContent = log;
+                            consoleDiv.appendChild(div);
+                        });
+                        
+                        // Scroll to bottom
+                        consoleDiv.scrollTop = consoleDiv.scrollHeight;
+                        
+                        // Keep only last 100 logs
+                        while (consoleDiv.children.length > 100) {
+                            consoleDiv.removeChild(consoleDiv.firstChild);
+                        }
+                    }
+                    
+                    // Update uptime
+                    if (data.running && data.uptime) {
+                        document.getElementById('uptime').textContent = data.uptime.split('.')[0];
+                    }
+                })
+                .catch(error => console.error('Error fetching status:', error));
+        }
+        
+        // Test login
+        function testLogin() {
+            const form = document.getElementById('spamForm');
+            const formData = new FormData(form);
+            
+            const data = {
+                username: formData.get('username'),
+                password: formData.get('password'),
+                sessionid: formData.get('sessionid')
+            };
+            
+            fetch('/test_login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(result => {
+                if (result.success) {
+                    alert('✅ Login successful!');
+                    if (result.sessionid) {
+                        document.querySelector('[name="sessionid"]').value = result.sessionid;
+                        document.querySelector('[name="mode"]').value = 'session';
+                        toggleLoginMode();
+                    }
+                } else {
+                    alert(`❌ Login failed: ${result.error}`);
+                }
+            })
+            .catch(error => {
+                alert('Network error. Please try again.');
+            });
+        }
+        
+        // Validate targets
+        function validateTargets() {
+            const targets = document.querySelector('[name="targets"]').value;
+            if (!targets.trim()) {
+                alert('Please enter targets first');
+                return;
+            }
+            
+            const targetList = targets.split(/[\n,]+/).map(t => t.trim()).filter(t => t);
+            alert(`Found ${targetList.length} valid targets:\n\n${targetList.slice(0, 5).join('\n')}${targetList.length > 5 ? '\n...' : ''}`);
+        }
+        
+        // Get session ID
+        function getSessionId() {
+            fetch('/api/get_session')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.sessionid) {
+                        document.getElementById('sessionText').value = data.sessionid;
+                        new bootstrap.Modal(document.getElementById('sessionModal')).show();
+                    } else {
+                        alert('No session ID available. Please login first.');
+                    }
+                });
+        }
+        
+        // Copy session ID
+        function copySession() {
+            const textarea = document.getElementById('sessionText');
+            textarea.select();
+            document.execCommand('copy');
+            alert('Session ID copied to clipboard!');
+        }
+        
+        // Copy console
+        function copyConsole() {
+            const consoleDiv = document.getElementById('console');
+            const text = Array.from(consoleDiv.children).map(div => div.textContent).join('\n');
+            navigator.clipboard.writeText(text);
+            alert('Console copied to clipboard!');
+        }
+        
+        // Clear console
+        function clearConsole() {
+            document.getElementById('console').innerHTML = '';
+        }
+        
+        // Load sample messages
+        function loadSampleMessages() {
+            const samples = [
+                "Hey there! 👋",
+                "Check this out! 🔥",
+                "Amazing content! 😍",
+                "Just wanted to say hi!",
+                "What's up? 😊",
+                "Love your posts! 💯",
+                "Keep up the great work! 🙌",
+                "Awesome! 👍",
+                "This is fire! 🔥",
+                "Can't wait to see more! 👀"
+            ];
+            document.querySelector('[name="messages"]').value = samples.join('\n');
+        }
+        
+        // Export config
+        function exportConfig() {
+            const form = document.getElementById('spamForm');
+            const formData = new FormData(form);
+            const config = {};
+            
+            for (let [key, value] of formData.entries()) {
+                config[key] = value;
+            }
+            
+            const blob = new Blob([JSON.stringify(config, null, 2)], {type: 'application/json'});
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'hawk_spammer_config.json';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            toggleLoginMode();
+            
+            // Start real-time updates
+            setInterval(updateStats, 2000);
+            updateStats();
+            
+            // Auto-scroll console
+            setInterval(() => {
+                const consoleDiv = document.getElementById('console');
+                consoleDiv.scrollTop = consoleDiv.scrollHeight;
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
