@@ -1,0 +1,11 @@
+Flask==2.3.3
+instagrapi==1.16.22
+requests==2.31.0
+python-dotenv==1.0.0
+gunicorn==21.2.0
+pandas==2.0.3
+selenium==4.15.2
+fake-useragent==1.4.0
+redis==5.0.0
+celery==5.3.4
+eventlet==0.33.3
